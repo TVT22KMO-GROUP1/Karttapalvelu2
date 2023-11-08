@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MapService</string>
+    <string name="google_map_api">AIzaSyCh0bjrBRz5lpSpv0s3jUVyfIO3nq1-e4g</string>
+</resources>
