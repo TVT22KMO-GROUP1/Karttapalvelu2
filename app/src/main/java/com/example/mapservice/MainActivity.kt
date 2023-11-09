@@ -186,7 +186,8 @@ class MainActivity : ComponentActivity() {
                         position = currentLocation
                     ),
                     title = "You",
-                    snippet = "You are here!"
+                    snippet = "Lat: ${currentLocation.latitude}, Lng:${currentLocation.longitude}"
+
                 )
             }
 
@@ -195,7 +196,6 @@ class MainActivity : ComponentActivity() {
                 verticalArrangement = Arrangement.Bottom,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(text = "Your location: ${currentLocation.latitude}/${currentLocation.longitude}")
                 Button(onClick = {
                     if (permissions.all {
                             ContextCompat.checkSelfPermission(
@@ -214,4 +214,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
